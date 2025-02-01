@@ -10,7 +10,7 @@ import java.util.Scanner;
  */
 public class NumberGuessingGame {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         Random random = new Random();
         int lowerBound = 1; // Lower limit of the range
         int upperBound = 100; // Upper limit of the range
@@ -26,7 +26,7 @@ public class NumberGuessingGame {
             System.out.print("Enter your guess: ");
             
             try {
-                userGuess = scanner.nextInt();
+                userGuess = input.nextInt();
                 attempts++;
 
                 if (userGuess < lowerBound || userGuess > upperBound) {
@@ -41,9 +41,9 @@ public class NumberGuessingGame {
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input. Please enter a valid integer.");
-                scanner.next(); // Clear invalid input
+                input.next(); // Clear invalid input
             }
         }
-        scanner.close();
+        input.close();
     }
 }
