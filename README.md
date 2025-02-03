@@ -14,7 +14,7 @@ A simple Java-based number guessing game where the user attempts to guess a rand
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/java-number-guessing-game.git
+   git clone https://github.com/nurulashraf/java-number-guessing-game.git
    ```
 2. Navigate to the project directory:
    ```sh
